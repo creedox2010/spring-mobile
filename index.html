@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spring-Mobile by SpringSource</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/SpringSource/spring-mobile">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/SpringSource/spring-mobile/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/SpringSource/spring-mobile/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Spring-Mobile</h1>
+          <p>Extensions to Spring MVC for developing mobile web applications.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/SpringSource">SpringSource</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Spring Mobile</h1>
+
+<p><a href="http://www.springsource.org/spring-mobile">Spring Mobile</a> is an extension to <a href="http://static.springsource.org/spring/docs/current/spring-framework-reference/html/mvc.html">Spring MVC</a> that aims to simplify the development of mobile web applications.</p>
+
+<h2>Downloading Artifacts</h2>
+
+<p>See <a href="https://github.com/SpringSource/spring-framework/wiki/Downloading-Spring-artifacts">downloading Spring artifacts</a> for Maven repository information. Unable to use Maven or other transitive dependency management tools? See <a href="https://github.com/SpringSource/spring-framework/wiki/Building-a-distribution-with-dependencies">building a distribution with dependencies</a>.</p>
+
+<h3>Dependencies</h3>
+
+<pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;org.springframework.mobile&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-mobile-device&lt;/artifactId&gt;
+    &lt;version&gt;${org.springframework.mobile-version}&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h3>Repositories</h3>
+
+<pre><code>&lt;repository&gt;
+    &lt;id&gt;spring-repo&lt;/id&gt;
+    &lt;name&gt;Spring Repository&lt;/name&gt;
+    &lt;url&gt;http://repo.springsource.org/release&lt;/url&gt;
+&lt;/repository&gt;   
+
+&lt;repository&gt;
+    &lt;id&gt;spring-milestone&lt;/id&gt;
+    &lt;name&gt;Spring Milestone Repository&lt;/name&gt;
+    &lt;url&gt;http://repo.springsource.org/milestone&lt;/url&gt;
+&lt;/repository&gt;
+
+&lt;repository&gt;
+    &lt;id&gt;spring-snapshot&lt;/id&gt;
+    &lt;name&gt;Spring Snapshot Repository&lt;/name&gt;
+    &lt;url&gt;http://repo.springsource.org/snapshot&lt;/url&gt;
+&lt;/repository&gt;
+</code></pre>
+
+<h2>Documentation</h2>
+
+<p>See the current <a href="http://static.springsource.org/spring-mobile/docs/current/api/">Javadoc</a> and <a href="http://static.springsource.org/spring-mobile/docs/current/reference/html/">reference docs</a>.</p>
+
+<h2>Sample Applications</h2>
+
+<p>Several example projects are available in the <a href="https://github.com/SpringSource/spring-mobile-samples">samples repository</a>.</p>
+
+<h2>Issue Tracking</h2>
+
+<p>Report issues via the <a href="http://jira.springsource.org/browse/MOBILE">Spring Mobile JIRA</a>. While JIRA is preferred, <a href="https://github.com/SpringSource/spring-mobile/issues?direction=desc&amp;sort=created&amp;state=open">GitHub issues</a> are also welcome. Understand our issue management process by reading about <a href="https://github.com/cbeams/spring-framework/wiki/The-Lifecycle-of-an-Issue">the lifecycle of an issue</a>.</p>
+
+<h2>Build from Source</h2>
+
+<ol>
+<li>
+<p>Clone the repository from GitHub:</p>
+
+<pre><code>$ git clone git://github.com/SpringSource/spring-mobile.git
+</code></pre>
+</li>
+<li>
+<p>Navigate into the cloned repository directory:</p>
+
+<pre><code>$ cd spring-mobile
+</code></pre>
+</li>
+<li>
+<p>The project uses <a href="http://gradle.org">Gradle</a> to build:</p>
+
+<pre><code>$ ./gradlew build
+</code></pre>
+</li>
+<li>
+<p>Install jars into your local Maven cache (optional)</p>
+
+<pre><code>$ ./gradlew install
+</code></pre>
+</li>
+</ol><h2>Import Source into your IDE</h2>
+
+<h3>Eclipse</h3>
+
+<ol>
+<li>
+<p>To generate Eclipse metadata (.classpath and .project files):</p>
+
+<pre><code>$ ./gradlew eclipse
+</code></pre>
+</li>
+<li>
+<p>Once complete, you may then import the projects into Eclipse as usual:</p>
+
+<pre><code>File -&gt; Import -&gt; Existing projects into workspace
+</code></pre>
+
+<p><em>Note: <a href="http://www.springsource.com/developer/sts">SpringSource Tool Suite</a> has built in support for <a href="http://gradle.org">Gradle</a>, and you can simply import as Gradle projects.</em></p>
+</li>
+</ol><h3>IDEA</h3>
+
+<p>Generate IDEA metadata (.iml and .ipr files):</p>
+
+<pre><code>$ ./gradlew idea
+</code></pre>
+
+<h2>Contributing</h2>
+
+<p><a href="http://help.github.com/send-pull-requests">Pull requests</a> are welcome. See the <a href="https://github.com/SpringSource/spring-mobile/wiki/Contributor-Guidelines">contributor guidelines</a> for details.</p>
+
+<h2>License</h2>
+
+<p><a href="http://www.springsource.org/spring-mobile">Spring Mobile</a> is released under version 2.0 of the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License</a>.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
